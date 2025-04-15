@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CN48E3FM1C"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CN48E3FM1C');
+</script>
+
+<body style="font-family: sans-serif">
+    <h1>Inti: 1 long name..... Company</h1>
+    <ul>
+        <li>Environment: staging</li>
+        <li>Account: Last Mile Metrics</li>
+        <li>Company: 1 Long name .... Company</li>
+    </ul>
+    <button><a href="index.html">Back</a></button>
+
+    <h3>Calls</h3>
+
+    <h4>Website pool</h4>
+    <p>(404) 545-6675 </p>
+    <p>Swap target: 4 0 4 5 4 5 6 6 7 5</p>
+
+    <h3>Forms</h3>
+    <h4>CallRail Custom Form</h4>
+    <div id="cr-form-FOR8b6f5f7df9bc4970855b6df4de360df3"></div>
+
+    <script type="text/javascript" src="//js.staging-callrail.com/companies/320201349/51160c4b9b47729474a8/12/swap.js"></script> 
+</body>
+
+</html>
