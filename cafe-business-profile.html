@@ -2,48 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Business Profile with Split Hours</title>
+  <title>Business Profile - Opening Hours</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      color: #333;
       padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    pre {
-      background: #f4f4f4;
-      padding: 15px;
-      border-radius: 5px;
-      overflow-x: auto;
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #2980b9;
+      color: white;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9fafd;
     }
   </style>
 </head>
 <body>
-  <h1>Business Profile</h1>
-  <h2>Cafe Morning</h2>
-  <p>Address: 123 ABC Street, District 1, Ho Chi Minh City</p>
-  <p>Phone: +84 123 456 789</p>
-  <p>Email: contact@cafemorning.com</p>
-  <p>Website: <a href="https://cafemorning.example" target="_blank">cafemorning.example</a></p>
-
-  <h3>Opening Hours</h3>
-  <pre id="json-hours" style="white-space: pre-wrap;">
-{
-  "monday": [
-    { "open": "08:00", "close": "12:00" },
-    { "open": "16:00", "close": "22:00" }
-  ],
-  "tuesday": [
-    { "open": "08:00", "close": "12:00" },
-    { "open": "16:00", "close": "22:00" }
-  ],
-  "wednesday": [],
-  "thursday": [
-    { "open": "08:00", "close": "12:00" }
-  ],
-  "friday": [
-    { "open": "08:00", "close": "12:00" },
-    { "open": "16:00", "close": "23:00" }
-  ]
-}
-  </pre>
+  <h1>Cafe Morning</h1>
+  <h2>Opening Hours (Mon - Sun)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Morning</th>
+        <th>Evening</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Monday</td><td>08:00 - 12:00</td><td>16:00 - 23:00</td></tr>
+      <tr><td>Tuesday</td><td>08:00 - 12:00</td><td>16:00 - 23:00</td></tr>
+      <tr><td>Wednesday</td><td>08:00 - 12:00</td><td>16:00 - 23:00</td></tr>
+      <tr><td>Thursday</td><td>08:00 - 12:00</td><td>16:00 - 23:00</td></tr>
+      <tr><td>Friday</td><td>08:00 - 12:00</td><td>16:00 - 23:00</td></tr>
+      <tr><td>Saturday</td><td>08:00 - 12:00</td><td>16:00 - 23:00</td></tr>
+      <tr><td>Sunday</td><td>08:00 - 12:00</td><td>16:00 - 23:00</td></tr>
+    </tbody>
+  </table>
 </body>
 </html>
