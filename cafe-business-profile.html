@@ -2,18 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Business Profile - Sample</title>
+  <title>Business Profile with Split Hours</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+  </style>
 </head>
 <body>
   <h1>Business Profile</h1>
-  <pre id="json-data" style="white-space: pre-wrap; background: #eee; padding: 10px;">
+  <h2>Cafe Morning</h2>
+  <p>Address: 123 ABC Street, District 1, Ho Chi Minh City</p>
+  <p>Phone: +84 123 456 789</p>
+  <p>Email: contact@cafemorning.com</p>
+  <p>Website: <a href="https://cafemorning.example" target="_blank">cafemorning.example</a></p>
+
+  <h3>Opening Hours</h3>
+  <pre id="json-hours" style="white-space: pre-wrap;">
 {
-  "businessName": "Cafe Morning",
-  "address": "123 ABC Street, District 1, Ho Chi Minh City",
-  "phone": "+84 123 456 789",
-  "email": "contact@cafemorning.com",
-  "website": "https://cafemorning.example",
-  "description": "Cafe Morning specializes in hand-roasted coffee and pastries."
+  "monday": [
+    { "open": "08:00", "close": "12:00" },
+    { "open": "16:00", "close": "22:00" }
+  ],
+  "tuesday": [
+    { "open": "08:00", "close": "12:00" },
+    { "open": "16:00", "close": "22:00" }
+  ],
+  "wednesday": [],
+  "thursday": [
+    { "open": "08:00", "close": "12:00" }
+  ],
+  "friday": [
+    { "open": "08:00", "close": "12:00" },
+    { "open": "16:00", "close": "23:00" }
+  ]
 }
   </pre>
 </body>
